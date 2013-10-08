@@ -17,27 +17,27 @@ Partial Class _Default
         Dim pay As Double
         Dim taxAMNT As Double
 
-      
-
-       
-            'This Section Converts each input string to the appropriate variable assigned.
-            hourlyWage = CDbl(tbHourlyWage.Text)
-            hoursWorked = CDbl(tbHoursWorked.Text)
-            preTax = CDbl(tbPreTax.Text)
-            afterTax = CDbl(TbAfterTax.Text)
 
 
 
-            'This Section Formats the Loan Input to Currency.
-            tbHourlyWage.Text = FormatCurrency(hourlyWage)
-            tbPreTax.Text = FormatCurrency(preTax)
-            TbAfterTax.Text = FormatCurrency(afterTax)
+        'This Section Converts each input string to the appropriate variable assigned.
+        hourlyWage = CDbl(tbHourlyWage.Text)
+        hoursWorked = CDbl(tbHoursWorked.Text)
+        preTax = CDbl(tbPreTax.Text)
+        afterTax = CDbl(TbAfterTax.Text)
+
+
+
+        'This Section Formats the Loan Input to Currency.
+        tbHourlyWage.Text = FormatCurrency(hourlyWage)
+        tbPreTax.Text = FormatCurrency(preTax)
+        TbAfterTax.Text = FormatCurrency(afterTax)
         lblNetWeekPay.Text = FormatCurrency(netPay)
 
 
-            'Calculating Pay
+        'Calculating Pay
         pay = ((hourlyWage * hoursWorked))
-            'calcualting taxes
+        'calcualting taxes
         If pay < 500 Then
             taxAMNT = (0.18 * pay)
         End If
@@ -59,4 +59,5 @@ Partial Class _Default
         lblNetWeekPay.Text = ""
         tbHoursWorked.Text = ""
     End Sub
+
 End Class
