@@ -1,0 +1,18 @@
+﻿body {  background: lightblue; font-family: "Comic Sans MS";
+
+}
+.h1 {
+     font-style:italic;
+}
+
+.h2 {
+     font-family: 'Lucida Sans Typewriter'; 
+}
+
+
+#intro {font-style:italic; color: darkblue; border:dotted;
+}
+
+#pay {
+    color:green;
+}
